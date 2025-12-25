@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AL-QADIR MACHINERY — Shoukat Ali </title>
+<style>
+  /* AL-QADIR MACHINERY – STYLE.CSS (Aqua Green + White Theme) */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:black; /* light aqua white */
+    color:white;
+}
+
+/* NAVBAR */
+.nav-logo {
+    height: 45px;
+    border-radius: 5px;
+    border-radius: 50%;
+}
+
+.navbar {
+    padding: 12px 0;
+    background-color: #00e5d4; /* aqua green */
+    height: 55px;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #006f62 !important; /* deep aqua green */
+}
+
+/* HERO SLIDER */
+.hero-slider {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.6);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+/* Simple, modern styles for the About Us section */
+
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color: #111; background: #f7f8fb; }
+
+/* Container */
+.container { max-width: 1080px; margin: 0 auto; padding: 40px 20px; }
+
+/* Card layout */
+.about-card {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+}
+
+/* Image */
+.founder-photo {
+  flex: 0 0 180px;
+  width: 180px;
+  height: 180px;
+  border-radius: 999px; /* circle */
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #eef2ff 0%, #ffffff 100%);
+  border: 4px solid rgba(0,0,0,0.04);
+}
+
+.founder-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keep aspect and fill circle */
+  display: block;
+}
+
+/* Content area */
+.about-content { flex: 1; min-width: 0; }
+.about-title { font-size: 20px; margin-bottom: 8px; color: #0f172a; }
+.lead { font-size: 15px; color: #334155; margin-bottom: 16px; line-height: 1.5; }
+
+/* Founder details */
+.founder-info { margin-top: 6px; }
+.founder-name { font-size: 18px; margin-bottom: 4px; color: #0b1220; }
+.founder-role { font-size: 13px; color: #64748b; margin-bottom: 8px; }
+.founder-desc { font-size: 14px; color: #475569; line-height: 1.5; }
+
+/* CTA */
+.cta {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: linear-gradient(90deg,#375be8,#7c5cff);
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 6px 18px rgba(55,91,232,0.18);
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 760px) {
+  .about-card { flex-direction: column; text-align: center; padding: 22px; gap: 18px; }
+  .founder-photo { width: 140px; height: 140px; }
+  .about-content { padding: 0 6px; }
+  .lead { font-size: 15px; }
+}
+
+
+/* CATALOGUE */
+.catalogue-section {
+    padding: 80px 0;
+    background: #eafffa; /* mint aqua */
+}
+
+.brand-block {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-left: 5px solid #00e5d4;
+}
+
+.brand-block h3 {
+    color: #006f62; /* deep aqua */
+    margin-bottom: 15px;
+}
+
+.brand-block ul li {
+    margin-bottom: 8px;
+}
+
+/* GALLERY */
+.gallery-section {
+    padding: 70px 0;
+    background: white;
+}
+
+.gallery-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    border: 3px solid #00e5d4;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+.about-section {
+    background:white;
+    padding: 80px 0;
+}
+
+.about-content ul {
+    padding-left: 18px;
+}
+
+.about-content ul li {
+    margin-bottom: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.3rem; }
+
+    p, li {
+        font-size: 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+/* CONTACT */
+.contact-section {
+    padding: 70px 0;
+    background: #eafffa;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #00e5d4;
+}
+
+.map {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    border: 4px solid #00e5d4;
+}
+
+/* FOOTER */
+.footer {
+    padding: 30px 0;
+    background: #006f62; /* deep aqua */
+    color: white;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+
+
+</style>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="brand.jpg" class="nav-logo me-2" alt="AL-QADIR logo">
+        <span class="fw-bold">AL-QADIR MACHINERY</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+
+          <!-- Catalogue dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="catalogueDropdown" data-bs-toggle="dropdown">Catalogue</a>
+
+            <ul class="dropdown-menu dropdown-menu-end p-2" style="min-width:280px;">
+              <li><a class="dropdown-item" href="#Lockstitch">Lockstitch</a></li>
+              <li><a class="dropdown-item" href="#DirectDrive">Direct Drive</a></li>
+              <li><a class="dropdown-item" href="#Overlock">Overlock</a></li>
+
+              <li><hr class="dropdown-divider"></li>
+
+              <li><a class="dropdown-item" href="#sewkey">Sewkey</a></li>
+              <li><a class="dropdown-item" href="#bestsun">Best Sun</a></li>
+              <li><a class="dropdown-item" href="#yalis">Yalis (Cutting)</a></li>
+              <li><a class="dropdown-item" href="#sidi">Sidi Mondial (Finishing)</a></li>
+              <li><a class="dropdown-item" href="#tongxin">TongXin (Dyeing)</a></li>
+              <li><a class="dropdown-item" href="#winda">Winda (CAD-CAM)</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="header-social">
+  <a href="https://www.youtube.com/@shoketali3714" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+  <a href="https://www.facebook.com/profile.php?id=61585097782976" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.tiktok.com/@alqadir16" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+  <a href="https://www.linkedin.com/in/shoukat-ali-097819107/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero-slider">
+    <section class="hero-slider">
+
+  <div class="slides fade active">
+    <img src="sewkey.jpeg" alt="Machinery Slide 1">
+    <div class="hero-content">
+      <h1>AL-QADIR MACHINERY</h1>
+      <p>Industrial & Construction Machinery Solutions</p>
+    </div>
+  </div>
+
+  <div class="slides fade">
+    <img src="Industrial machinery in blue gradient design.png" alt="Machinery Slide 2">
+    <div class="hero-content">
+    </div>
+  </div>
+
+  <div class="slides fade">
+    <img src="sewing.jpeg" alt="Machinery Slide 3">
+    <div class="hero-content">
+      <p>Built for Performance</p>
+    </div>
+  </div>
+
+  
+
+</section>
+
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section" id="about">
+  <div class="container">
+    <div class="about-card">
+
+      <div class="founder-photo">
+        <img src="owner.jfif" alt="Founder — Shoukat Ali">
+      </div>
+
+      <div class="about-content">
+        <h2 class="about-title">About AL-QADIR MACHINERY</h2>
+
+        <p class="lead">
+          AL-QADIR MACHINERY is a trusted name in industrial sewing, cutting,
+          finishing and textile machinery solutions. We focus on quality,
+          performance and long-term reliability.
+        </p>
+
+        <h3 class="mt-3">Our Services</h3>
+        <ul class="mt-2">
+          <li>Industrial Sewing Machine Sales</li>
+          <li>Cutting & Finishing Machinery</li>
+          <li>Direct Drive & Overlock Machines</li>
+          <li>Repairing & Maintenance Services</li>
+          <li>Spare Parts & Technical Support</li>
+        </ul>
+
+        <div class="founder-info mt-3">
+          <h3 class="founder-name">Shoukat Ali</h3>
+          <p class="founder-role">Founder & CEO</p>
+          <p class="founder-desc">
+            With more than 30 years of experience in industrial textile machinery,
+            Shoukat Ali is known for honest dealing, technical expertise and
+            reliable after-sales support.
+          </p>
+        </div>
+
+        <a class="cta" href="#contact">Contact Us</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- CATALOGUE -->
+  <section id="catalogue" class="catalogue-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Catalogue — Reference Codes Included</h2>
+
+      <div class="row g-4">
+
+        <!-- Sewkey group -->
+        <div class="col-md-4">
+          <div id="sewkey" class="brand-block p-3 h-100">
+            <img src="linkweb.png" class="img-fluid mb-3" alt="Sewkey SK-8700">
+            <h5>Sewkey SK-8700</h5>
+            <p class="small text-muted">Industrial Lockstitch — <strong>REF: SK-8700</strong></p>
+            <ul class="small">
+              <li>Speed: up to 5,000 spm</li>
+              <li>Auto lubrication</li>
+            </ul>
+            <a href="https://www.cnsewkey.com/" target="_blank" class="btn btn-outline-primary w-100 mt-2">Manufacturer</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="brand-block p-3 h-100">
+            <img src="linkweb.png" class="img-fluid mb-3" alt="Sewkey SK-9000D">
+            <h5>Sewkey SK-9000D</h5>
+            <p class="small text-muted">Direct Drive — <strong>REF: SK-9000D</strong></p>
+            <ul class="small">
+              <li>Energy-efficient motor</li>
+              <li>Low maintenance</li>
+            </ul>
+            <a href="#" class="btn btn-outline-primary w-100 mt-2">Request Quote</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="brand-block p-3 h-100">
+            <img src="linkweb.png" class="img-fluid mb-3" alt="Sewkey SK-5200">
+            <h5>Sewkey SK-5200</h5>
+            <p class="small text-muted">Overlock — <strong>REF: SK-5200</strong></p>
+            <ul class="small">
+              <li>3/4-thread configurations</li>
+              <li>Robust construction</li>
+            </ul>
+            <a href="#" class="btn btn-outline-primary w-100 mt-2">Request Quote</a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="my-5">
+
+      <!-- Other brands -->
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div id="yalis" class="brand-block p-3 h-100 text-center">
+            <img src="yalis.png" class="img-fluid mb-3" alt="Yalis Cutting">
+            <h5>Yalis — Cutting Systems</h5>
+            <p class="small text-muted">REF: YL-AC100</p>
+            <a href="https://yalis-cc.com/en/" target="_blank" class="btn btn-outline-primary w-100 mt-2">Manufacturer</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div id="sidi" class="brand-block p-3 h-100 text-center">
+            <img src="siddi.png" class="img-fluid mb-3" alt="Sidi Mondial">
+            <h5>Sidi Mondial — Finishing</h5>
+            <p class="small text-muted">REF: SD-IRN01</p>
+            <a href="https://sidimondial.com/" target="_blank" class="btn btn-outline-primary w-100 mt-2">Manufacturer</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div id="winda" class="brand-block p-3 h-100 text-center">
+            <img src="winda.jpeg" class="img-fluid mb-3" alt="Winda Cad Cam">
+            <h5>Winda — CAD-CAM</h5>
+            <p class="small text-muted">REF: WD-CAD01</p>
+            <a href="http://www.windacadcam.com/" target="_blank" class="btn btn-outline-primary w-100 mt-2">Manufacturer</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Gallery</h2>
+
+      <div class="row g-3">
+        <div class="col-md-4"><img src="Industrial sewing setup with tools (1).png" class="gallery-img" alt="Gallery Image 1"></div>
+        <div class="col-md-4"><img src="exhibition.jfif" class="gallery-img" alt="Gallery Image 2"></div>
+        <div class="col-md-4"><img src="photos.jfif" class="gallery-img" alt="Gallery Image 3"></div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <form id="contactForm" class="contact-form p-4 bg-white rounded shadow-sm">
+            <div class="mb-3">
+              <label class="form-label small">Full Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Your full name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label small">Email</label>
+              <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label small">Phone</label>
+              <input type="text" id="phone" class="form-control" placeholder="+92 300 1234567">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label small">Message</label>
+              <textarea id="message" class="form-control" rows="5" placeholder="How can we help?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            <div id="formAlert" class="mt-3" style="display:none;"></div>
+          </form>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="shadow-sm rounded overflow-hidden mb-3">
+            <iframe class="map" src="https://maps.google.com/maps?q=Lahore,%20Pakistan&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+          </div>
+
+          <div class="small text-muted">
+            <p class="mb-0"><strong>Address:</strong> Al-Qadir Machinery, Lahore</p>
+            <p class="mb-0"><strong>Email:</strong> <a href="mailto:alqadirmachinery@gmail.com">alqadirmachinery@gmail.com</a></p>
+            <p class="mb-0"><strong>Phone:</strong> +92 300 9421976</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <footer class="footer">
+  <div class="container text-center">
+
+    <img src="brand.jpg" class="footer-logo mb-2" alt="logo">
+    <p class="mb-1"><strong>AL-QADIR MACHINERY</strong></p>
+    <p class="small mb-3">Industrial sewing, cutting & finishing equipment.</p>
+
+    <!-- FOOTER SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="https://www.youtube.com/@shoketali3714" target="_blank" class="youtube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61585097782976" target="_blank" class="facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.tiktok.com/@alqadir16" target="_blank" class="tiktok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/shoukat-ali-097819107/" target="_blank" class="linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <p class="small mt-3 mb-0">
+      © 2025 AL-QADIR MACHINERY. All Rights Reserved.
+    </p>
+
+  </div>
+</footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+  <script>
+    // Hero Slider
+    (function () {
+      const slides = document.querySelectorAll('.slide');
+      let idx = 0;
+      setInterval(() => {
+        slides[idx].classList.remove('active');
+        idx = (idx + 1) % slides.length;
+        slides[idx].classList.add('active');
+      }, 5000);
+    })();
+
+    // Contact Form
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('contactForm');
+      const alertBox = document.getElementById('formAlert');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = name.value.trim();
+        const email = email.value.trim();
+        const message = message.value.trim();
+
+        if (!name || !email || !message) {
+          showAlert('Please fill in all required fields.', 'danger');
+          return;
+        }
+
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!re.test(email)) {
+          showAlert('Please enter a valid email address.', 'danger');
+          return;
+        }
+
+        showAlert('Your message has been received. We will contact you shortly.', 'success');
+        form.reset();
+      });
+
+      function showAlert(text, type) {
+        alertBox.style.display = 'block';
+        alertBox.className = `alert alert-${type}`;
+        alertBox.textContent = text;
+        setTimeout(() => { alertBox.style.display = 'none'; }, 6000);
+      }
+    });
+    // ------------------------------
+// MOBILE MENU TOGGLE
+// ------------------------------
+const menuBtn = document.querySelector('.menu-btn');
+const navMenu = document.querySelector('.nav-links');
+
+if (menuBtn) {
+    menuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        menuBtn.classList.toggle('open');
+    });
+}
+
+// ------------------------------
+// CATALOGUE DROPDOWN TOGGLE
+// ------------------------------
+const catalogueBtn = document.querySelector('.catalogue-btn');
+const catalogueDropdown = document.querySelector('.catalogue-dropdown');
+
+if (catalogueBtn) {
+    catalogueBtn.addEventListener('click', () => {
+        catalogueDropdown.classList.toggle('show');
+    });
+}
+
+// Close dropdown if clicked outside
+window.addEventListener('click', function(e) {
+    if (!e.target.matches('.catalogue-btn')) {
+        if (catalogueDropdown.classList.contains('show')) {
+            catalogueDropdown.classList.remove('show');
+        }
+    }
+});
+
+// ------------------------------
+// SMOOTH SCROLL FOR NAVIGATION
+// ------------------------------
+const links = document.querySelectorAll('a[href^="#"]');
+
+links.forEach(link => {
+    link.addEventListener('click', function(e) {
+        const targetID = this.getAttribute('href');
+        const targetSection = document.querySelector(targetID);
+        if (targetSection) {
+            e.preventDefault();
+            window.scrollTo({
+                top: targetSection.offsetTop - 70,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// ------------------------------
+// PRODUCT CARD HOVER (EFFECT HANDLED IN CSS)
+// ------------------------------
+// No JS needed — CSS handles animations.
+
+// ------------------------------
+// CONTACT FORM (Optional Future Integration)
+// ------------------------------
+// You can add email sending API or WhatsApp automation here later.
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("YOUR_PUBLIC_KEY");
+  })();
+  document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if(!name || !email || !message){
+        showAlert("Please fill all required fields", "danger");
+        return;
+    }
+
+    // EMAIL SEND
+    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+        from_name: name,
+        from_email: email,
+        phone: phone,
+        message: message
+    })
+    .then(function(){
+        showAlert("Message sent successfully!", "success");
+
+        // WHATSAPP AUTO OPEN
+        const whatsappMsg =
+          `New Inquiry%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
+
+        window.open(
+          `https://wa.me/923009421976?text=${whatsappMsg}`,
+          "_blank"
+        );
+
+        document.getElementById("contactForm").reset();
+    }, function(){
+        showAlert("Failed to send message. Try again.", "danger");
+    });
+});
+
+function showAlert(text, type){
+    const alertBox = document.getElementById("formAlert");
+    alertBox.style.display = "block";
+    alertBox.className = `alert alert-${type}`;
+    alertBox.textContent = text;
+    setTimeout(() => alertBox.style.display = "none", 5000);
+}
+</script>
+
+</body>
+</html>
